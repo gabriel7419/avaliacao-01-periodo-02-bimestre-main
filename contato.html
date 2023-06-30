@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carro Novinho</title>
+    <meta name="description" content="Meu carro Novinho - Carros de procedência com marcas renomadas">
+    <meta name="keyword" content="marcas, veiculos, compra, venda">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/icone.png">
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Meu Carro Novinho">
+            <img src="imagens/logo.png" alt="Meu Carro Novinho">
+        </a>
+
+        <a href="javascript:menu()" class="menu" title="Mostrar Menu">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="Home">Home</a></li>
+                <li><a href="quem-somos.html" class="Quem Somos">Quem Somos</a></li>
+                <li><a href="contato.html" class="Contato">Contato</a></li>
+                <li><a href="http://www.facebook.com" class="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="imagens/banner.jpg" alt="Banner" title="Banner">
+    </div>
+
+    <main>
+        <h1 class="center">Entre em Contato</h1>
+        <form name="formContato" method="post" action="http://www.professorburnes.com.br/teste-form.php">
+            <label for="nome">Seu nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" class="box">
+            <br>
+            <label for="email">Seu e-mail:</label>
+            <input type="text" name="email" id="email" placeholder="Digite seu e-mail" class="box">
+            <br>
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" class="box" rows="5"></textarea>
+            <button type="submit" class="btn">
+                <i class="fa-solid fa-check"></i> Enviar Mensagem
+            </button>
+        </form>
+        <h1 class="center">Mapa de Localização</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.5149132137203!2d-52.38296645057757!3d-24.04816538436703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed754071f8391b%3A0x6c679332dde3e683!2sCentro%20Universit%C3%A1rio%20Grupo%20Integrado%2C%20Centro!5e0!3m2!1spt-BR!2sbr!4v1646751084732!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </main>
+
+    <footer>
+        <div class="infos">
+            <p><strong>Meu Carro Novinho</strong></p>
+            <p>
+                <i class="fa-solid fa-location-dot"></i> Av. Rufino da Silva 1000, Centro, Aquidaban - PR
+                <br>
+                <i class="fa-solid fa-envelope"></i> contato@meucarronovinho.com.br
+                <br>
+                <i class="fa-brands fa-facebook"></i> /meucarronovinho.aquidaban
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+		function menu() {
+			document.querySelector("header nav").classList.toggle("show");
+		}
+	</script>
+</body>
+</html>
